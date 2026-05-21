@@ -1,0 +1,8 @@
+{
+  "use_name": true,
+  "use_size": true,
+  "use_duration": true,
+  "name_threshold": 0.8,
+  "size_tolerance": 0.95,
+  "duration_tolerance": 0.95
+}

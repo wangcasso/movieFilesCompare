@@ -1,0 +1,16 @@
+# 视频文件去重工具 - 依赖包
+# 本工具主要使用Python标准库，无需额外安装第三方包
+
+# Python版本要求: Python 3.6+
+# 
+# 标准库包括:
+# - tkinter (GUI界面)
+# - os/pathlib (文件系统操作)
+# - difflib (字符串相似度)
+# - subprocess (调用外部命令)
+# - json (配置管理)
+# - threading (多线程)
+# - dataclasses (数据类)
+
+# 可选: 如果需要更精确的视频信息读取，可以安装ffprobe
+# 下载地址: https://ffmpeg.org/download.html

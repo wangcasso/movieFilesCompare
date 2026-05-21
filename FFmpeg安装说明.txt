@@ -1,0 +1,62 @@
+# 如何安装FFmpeg（可选但推荐）
+
+## 为什么需要FFmpeg？
+
+程序可以使用FFmpeg的ffprobe工具精确读取视频文件的时长信息。如果不安装，视频时长将显示为0，但不影响基于名称和大小的比较。
+
+## 安装步骤
+
+### 方法一：使用Scoop（推荐）
+
+1. 打开PowerShell
+2. 运行以下命令：
+   ```powershell
+   # 安装Scoop（如果还没有）
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+   
+   # 安装FFmpeg
+   scoop install ffmpeg
+   ```
+
+### 方法二：手动安装
+
+1. **下载FFmpeg**
+   - 访问: https://ffmpeg.org/download.html
+   - 点击 "Windows builds"
+   - 下载最新版本（推荐 gyan.dev 或 BtbN 版本）
+
+2. **解压文件**
+   - 将下载的压缩包解压到一个目录，例如: `C:\ffmpeg`
+
+3. **添加到环境变量**
+   
+   **Windows 10/11:**
+   - 右键"此电脑" → "属性" → "高级系统设置"
+   - 点击"环境变量"
+   - 在"系统变量"中找到"Path"，点击"编辑"
+   - 点击"新建"，添加: `C:\ffmpeg\bin`（根据实际安装路径调整）
+   - 点击"确定"保存
+
+4. **验证安装**
+   - 打开新的命令提示符窗口
+   - 运行: `ffprobe -version`
+   - 如果显示版本信息，说明安装成功
+
+## 验证FFmpeg是否工作
+
+打开命令提示符，运行：
+
+```bash
+ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 你的视频文件路径.mp4
+```
+
+如果返回一个数字（秒数），说明FFmpeg工作正常。
+
+## 不安装FFmpeg的影响
+
+- ✅ 文件名比较 - 正常工作
+- ✅ 文件大小比较 - 正常工作  
+- ⚠️ 视频时长比较 - 无法使用（时长始终为0）
+
+如果你只需要基于名称和大小去重，可以不安装FFmpeg。
