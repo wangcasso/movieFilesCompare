@@ -82,7 +82,7 @@ class VideoScanner:
                     file_name=video_file.stem,  # 不含扩展名
                     file_size=stat.st_size,
                     duration=duration,
-                    folder_path=str(folder_path)
+                    folder_path=str(video_file.parent.absolute())  # 存储视频文件的实际目录路径
                 )
                 videos.append(video_info)
             except Exception as e:
@@ -548,7 +548,7 @@ class VideoDuplicateFinderApp:
     def __init__(self, root):
         self.root = root
         self.root.title("视频文件去重工具 v2.0")
-        self.root.geometry("1200x800")
+        self.root.geometry("1200x900")
 
         # 数据存储
         self.folders = []
@@ -795,8 +795,15 @@ class VideoDuplicateFinderApp:
         self.log_text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         log_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
-        # 结果显示区域
-        result_frame = ttk.LabelFrame(self.root, text="📊 扫描结果", padding="10")
+        # 结果显示区域（使用PanedWindow确保底部按钮始终可见）
+        main_paned = ttk.PanedWindow(self.root, orient=tk.VERTICAL)
+        main_paned.pack(fill=tk.BOTH, expand=True)
+        
+        # 内容区域
+        content_frame = ttk.Frame(main_paned)
+        main_paned.add(content_frame, weight=1)
+        
+        result_frame = ttk.LabelFrame(content_frame, text="📊 扫描结果", padding="10")
         result_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
 
         # 统计信息
@@ -857,9 +864,9 @@ class VideoDuplicateFinderApp:
         # 绑定右键菜单
         self.result_tree.bind('<Button-3>', self.show_context_menu)
 
-        # 底部按钮
-        bottom_frame = ttk.Frame(self.root, padding="10")
-        bottom_frame.pack(fill=tk.X)
+        # 底部按钮区域（固定在底部）
+        bottom_frame = ttk.Frame(main_paned, padding="10")
+        main_paned.add(bottom_frame, weight=0)
 
         # 左侧：配置和导出
         left_btn_frame = ttk.Frame(bottom_frame)
