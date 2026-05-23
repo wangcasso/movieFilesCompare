@@ -4,5 +4,13 @@
   "use_duration": true,
   "name_threshold": 0.8,
   "size_tolerance": 0.95,
-  "duration_tolerance": 0.95
+  "duration_tolerance_seconds": 2.0,
+  "last_folder_path": "H:/迅雷下载",
+  "folders": [
+    "H:/迅雷下载/视频 春节/iwara",
+    "H:/迅雷下载/MMD",
+    "H:/迅雷下载/rule34",
+    "H:/迅雷下载/mmd===",
+    "H:/迅雷下载/iwara"
+  ]
 }
