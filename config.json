@@ -1,13 +1,1235 @@
 {
-  "use_name": false,
-  "use_size": true,
+  "use_name": true,
+  "use_size": false,
   "use_duration": true,
-  "name_threshold": 0.8,
+  "name_threshold": 0.6983606557377049,
   "size_tolerance": 1.0,
   "duration_tolerance_seconds": 0.0,
   "last_folder_path": "H:/",
   "folders": [
     "H:/"
   ],
-  "whitelist": []
+  "whitelist": [
+    {
+      "id": "group_62_1779597101",
+      "files": [
+        {
+          "file_name": "psycho_out",
+          "file_size": 2755699,
+          "duration": 2.9696333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\浅上藤奶\\所长的欲望症-樱之章\\www\\movies\\psycho_out.webm"
+        },
+        {
+          "file_name": "psycho_out",
+          "file_size": 2755699,
+          "duration": 2.9696333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\浅上藤奶\\所长妄想症樱之章 ver1.0 中文重制完结版\\www\\movies\\psycho_out.webm"
+        }
+      ],
+      "added_time": "2026-05-24 12:31:41",
+      "file_count": 2
+    },
+    {
+      "id": "group_62_1779808721",
+      "files": [
+        {
+          "file_name": "宝具",
+          "file_size": 6369968,
+          "duration": 15.015,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\浅上藤奶\\所长的欲望症\\www\\movies\\宝具.webm"
+        },
+        {
+          "file_name": "宝具",
+          "file_size": 6369968,
+          "duration": 15.015,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\浅上藤奶\\[RPG] [官中NTRRPG]所长的欲望症·樱之章-7月赞助版\\www\\movies\\宝具.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:18:41",
+      "file_count": 2
+    },
+    {
+      "id": "group_163_1779809322",
+      "files": [
+        {
+          "file_name": "mov_36_12",
+          "file_size": 615301,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_36_12.webm"
+        },
+        {
+          "file_name": "mov_46_7",
+          "file_size": 608585,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_46_7.webm"
+        },
+        {
+          "file_name": "mov_67_1",
+          "file_size": 630467,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_67_1.webm"
+        },
+        {
+          "file_name": "mov_67_2",
+          "file_size": 602814,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_67_2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:28:42",
+      "file_count": 4
+    },
+    {
+      "id": "group_160_1779809472",
+      "files": [
+        {
+          "file_name": "mov_30_5",
+          "file_size": 945831,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_30_5.webm"
+        },
+        {
+          "file_name": "mov_53_7",
+          "file_size": 913364,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_53_7.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:31:12",
+      "file_count": 2
+    },
+    {
+      "id": "group_159_1779809486",
+      "files": [
+        {
+          "file_name": "mov_50_1",
+          "file_size": 821257,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_50_1.webm"
+        },
+        {
+          "file_name": "mov_66_1",
+          "file_size": 845508,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_66_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:31:26",
+      "file_count": 2
+    },
+    {
+      "id": "group_157_1779809493",
+      "files": [
+        {
+          "file_name": "mov_25_13",
+          "file_size": 1343357,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_25_13.webm"
+        },
+        {
+          "file_name": "mov_35_1",
+          "file_size": 1348563,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_35_1.webm"
+        },
+        {
+          "file_name": "mov_45_1",
+          "file_size": 1354008,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_45_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:31:33",
+      "file_count": 3
+    },
+    {
+      "id": "group_156_1779809497",
+      "files": [
+        {
+          "file_name": "20251112_EX11-1",
+          "file_size": 1307092,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251112_EX11-1.mp4"
+        },
+        {
+          "file_name": "20251112_EX11-2",
+          "file_size": 1353341,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251112_EX11-2.mp4"
+        },
+        {
+          "file_name": "20251112_EX32-1",
+          "file_size": 1379835,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251112_EX32-1.mp4"
+        },
+        {
+          "file_name": "20251112_EX52-1",
+          "file_size": 1314930,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251112_EX52-1.mp4"
+        },
+        {
+          "file_name": "20251112_EX56-1",
+          "file_size": 1310944,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251112_EX56-1.mp4"
+        },
+        {
+          "file_name": "20251116_EX46-2",
+          "file_size": 1299909,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251116_EX46-2.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:31:37",
+      "file_count": 6
+    },
+    {
+      "id": "group_155_1779809507",
+      "files": [
+        {
+          "file_name": "女警家1",
+          "file_size": 1990779,
+          "duration": 13.933333333333334,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\女警家1.webm"
+        },
+        {
+          "file_name": "女警家3",
+          "file_size": 1990509,
+          "duration": 13.933333333333334,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\女警家3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:31:47",
+      "file_count": 2
+    },
+    {
+      "id": "group_154_1779809543",
+      "files": [
+        {
+          "file_name": "TXMM-TJ-5",
+          "file_size": 2051744,
+          "duration": 14.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXMM-TJ-5.webm"
+        },
+        {
+          "file_name": "TXMM-TJ-6",
+          "file_size": 2027926,
+          "duration": 14.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXMM-TJ-6.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:32:23",
+      "file_count": 2
+    },
+    {
+      "id": "group_153_1779809559",
+      "files": [
+        {
+          "file_name": "AY-NKF-1",
+          "file_size": 2048565,
+          "duration": 10.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\AY-NKF-1.webm"
+        },
+        {
+          "file_name": "AY-NKF-2",
+          "file_size": 2004005,
+          "duration": 10.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\AY-NKF-2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:32:39",
+      "file_count": 2
+    },
+    {
+      "id": "group_148_1779809594",
+      "files": [
+        {
+          "file_name": "JA-WQ-4",
+          "file_size": 1552107,
+          "duration": 10.983333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-4.webm"
+        },
+        {
+          "file_name": "JA-WQ-8",
+          "file_size": 1582377,
+          "duration": 10.983333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-8.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:33:14",
+      "file_count": 2
+    },
+    {
+      "id": "group_147_1779809598",
+      "files": [
+        {
+          "file_name": "JA-WQ-3",
+          "file_size": 1567279,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-3.webm"
+        },
+        {
+          "file_name": "JA-WQ-5",
+          "file_size": 1557986,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-5.webm"
+        },
+        {
+          "file_name": "JA-WQ-6",
+          "file_size": 1566523,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-6.webm"
+        },
+        {
+          "file_name": "JA-WQ-7",
+          "file_size": 1571754,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-7.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:33:18",
+      "file_count": 4
+    },
+    {
+      "id": "group_146_1779809607",
+      "files": [
+        {
+          "file_name": "JA-ST-2",
+          "file_size": 1540812,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-ST-2.webm"
+        },
+        {
+          "file_name": "JA-ST-4",
+          "file_size": 1571889,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-ST-4.webm"
+        },
+        {
+          "file_name": "JA-ST-6",
+          "file_size": 1552567,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-ST-6.webm"
+        },
+        {
+          "file_name": "JA-WQ-2",
+          "file_size": 1551388,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-WQ-2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:33:27",
+      "file_count": 4
+    },
+    {
+      "id": "group_145_1779809609",
+      "files": [
+        {
+          "file_name": "JA-ST-1",
+          "file_size": 1549568,
+          "duration": 10.983333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-ST-1.webm"
+        },
+        {
+          "file_name": "JA-ST-3",
+          "file_size": 1577180,
+          "duration": 10.983333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JA-ST-3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:33:29",
+      "file_count": 2
+    },
+    {
+      "id": "group_140_1779809620",
+      "files": [
+        {
+          "file_name": "妈妈服装店4",
+          "file_size": 1391066,
+          "duration": 10.016666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\妈妈服装店4.webm"
+        },
+        {
+          "file_name": "妈妈服装店5",
+          "file_size": 1398766,
+          "duration": 10.016666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\妈妈服装店5.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:33:40",
+      "file_count": 2
+    },
+    {
+      "id": "group_139_1779809636",
+      "files": [
+        {
+          "file_name": "妈妈R胸1",
+          "file_size": 1467276,
+          "duration": 10.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\妈妈R胸1.webm"
+        },
+        {
+          "file_name": "妈妈R胸2",
+          "file_size": 1442873,
+          "duration": 10.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\妈妈R胸2.webm"
+        },
+        {
+          "file_name": "妈妈R胸3",
+          "file_size": 1468449,
+          "duration": 10.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\妈妈R胸3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:33:56",
+      "file_count": 3
+    },
+    {
+      "id": "group_135_1779809646",
+      "files": [
+        {
+          "file_name": "JJLB-HD-L-1",
+          "file_size": 2112089,
+          "duration": 14.983333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJLB-HD-L-1.webm"
+        },
+        {
+          "file_name": "JJLB-HD-L-2",
+          "file_size": 2128151,
+          "duration": 14.983333333333333,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJLB-HD-L-2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:34:06",
+      "file_count": 2
+    },
+    {
+      "id": "group_130_1779809733",
+      "files": [
+        {
+          "file_name": "TXMM-DC-1",
+          "file_size": 1819064,
+          "duration": 12.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXMM-DC-1.webm"
+        },
+        {
+          "file_name": "TXMM-J-1",
+          "file_size": 1820865,
+          "duration": 12.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXMM-J-1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:35:33",
+      "file_count": 2
+    },
+    {
+      "id": "group_129_1779809748",
+      "files": [
+        {
+          "file_name": "JJ-SY3-4",
+          "file_size": 1802930,
+          "duration": 13.016666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJ-SY3-4.webm"
+        },
+        {
+          "file_name": "JJ-SY3-5",
+          "file_size": 1818031,
+          "duration": 13.016666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJ-SY3-5.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:35:48",
+      "file_count": 2
+    },
+    {
+      "id": "group_127_1779809757",
+      "files": [
+        {
+          "file_name": "WH-J3-2",
+          "file_size": 1589651,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\WH-J3-2.webm"
+        },
+        {
+          "file_name": "WH-J3-3",
+          "file_size": 1591173,
+          "duration": 10.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\WH-J3-3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:35:57",
+      "file_count": 2
+    },
+    {
+      "id": "group_126_1779809768",
+      "files": [
+        {
+          "file_name": "JJLB-HD-4",
+          "file_size": 1675466,
+          "duration": 11.966666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJLB-HD-4.webm"
+        },
+        {
+          "file_name": "JJLB-HD-5",
+          "file_size": 1664263,
+          "duration": 11.966666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJLB-HD-5.webm"
+        },
+        {
+          "file_name": "JJLB-HD-6",
+          "file_size": 1700006,
+          "duration": 11.966666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\JJLB-HD-6.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:08",
+      "file_count": 3
+    },
+    {
+      "id": "group_124_1779809779",
+      "files": [
+        {
+          "file_name": "psycho_in",
+          "file_size": 2963875,
+          "duration": 2.8028,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\浅上藤奶\\所长的欲望症-樱之章\\www\\movies\\psycho_in.webm"
+        },
+        {
+          "file_name": "psycho_in",
+          "file_size": 2963875,
+          "duration": 2.8028,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\浅上藤奶\\所长妄想症樱之章 ver1.0 中文重制完结版\\www\\movies\\psycho_in.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:19",
+      "file_count": 2
+    },
+    {
+      "id": "group_113_1779809792",
+      "files": [
+        {
+          "file_name": "mov_82_2",
+          "file_size": 11955873,
+          "duration": 11.708333333333334,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_82_2.webm"
+        },
+        {
+          "file_name": "mov_82_3",
+          "file_size": 12343396,
+          "duration": 11.708333333333334,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_82_3.webm"
+        },
+        {
+          "file_name": "mov_82_5",
+          "file_size": 11984681,
+          "duration": 11.708333333333334,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_82_5.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:32",
+      "file_count": 3
+    },
+    {
+      "id": "group_112_1779809812",
+      "files": [
+        {
+          "file_name": "mov_69_11",
+          "file_size": 12195566,
+          "duration": 8.375,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_69_11.webm"
+        },
+        {
+          "file_name": "mov_69_12",
+          "file_size": 12029272,
+          "duration": 8.375,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_69_12.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:52",
+      "file_count": 2
+    },
+    {
+      "id": "group_111_1779809814",
+      "files": [
+        {
+          "file_name": "mov_68_16",
+          "file_size": 26534823,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_68_16.webm"
+        },
+        {
+          "file_name": "mov_68_19",
+          "file_size": 27158101,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_68_19.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:54",
+      "file_count": 2
+    },
+    {
+      "id": "group_110_1779809815",
+      "files": [
+        {
+          "file_name": "mov_42_3",
+          "file_size": 25642942,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_42_3.webm"
+        },
+        {
+          "file_name": "mov_46_1",
+          "file_size": 27035830,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_46_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:55",
+      "file_count": 2
+    },
+    {
+      "id": "group_109_1779809817",
+      "files": [
+        {
+          "file_name": "mov_23_16",
+          "file_size": 29616826,
+          "duration": 20.916666666666668,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_23_16.webm"
+        },
+        {
+          "file_name": "mov_42_1",
+          "file_size": 30309278,
+          "duration": 20.916666666666668,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_42_1.webm"
+        },
+        {
+          "file_name": "mov_52_1",
+          "file_size": 30757372,
+          "duration": 20.916666666666668,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_52_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:36:57",
+      "file_count": 3
+    },
+    {
+      "id": "group_108_1779809827",
+      "files": [
+        {
+          "file_name": "Infinity Nikki 11",
+          "file_size": 29276230,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 11.mp4"
+        },
+        {
+          "file_name": "Infinity Nikki 3",
+          "file_size": 29269418,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 3.mp4"
+        },
+        {
+          "file_name": "Infinity Nikki 5",
+          "file_size": 29261693,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 5.mp4"
+        },
+        {
+          "file_name": "Infinity Nikki 7",
+          "file_size": 29223188,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 7.mp4"
+        },
+        {
+          "file_name": "Infinity Nikki 8",
+          "file_size": 29231627,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 8.mp4"
+        },
+        {
+          "file_name": "Infinity Nikki 9",
+          "file_size": 29244658,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 9.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:37:07",
+      "file_count": 6
+    },
+    {
+      "id": "group_106_1779809972",
+      "files": [
+        {
+          "file_name": "Genshin Impact. Thumbs up. Sound. Ver 1",
+          "file_size": 1096549658,
+          "duration": 224.15,
+          "file_path": "H:\\迅雷下载\\可疑\\Bengugu collection\\Genshin Impact. Thumbs up\\Genshin Impact. Thumbs up. Sound. Ver 1.mp4"
+        },
+        {
+          "file_name": "Genshin Impact. Thumbs up. Sound. Ver 2",
+          "file_size": 1095900768,
+          "duration": 224.15,
+          "file_path": "H:\\迅雷下载\\可疑\\Bengugu collection\\Genshin Impact. Thumbs up\\Genshin Impact. Thumbs up. Sound. Ver 2.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:39:32",
+      "file_count": 2
+    },
+    {
+      "id": "group_105_1779809995",
+      "files": [
+        {
+          "file_name": "07HMV. Firefly QOS Version",
+          "file_size": 1340550425,
+          "duration": 218.4537641723356,
+          "file_path": "H:\\迅雷下载\\[MMD] MarchShadow 2024-06\\07HMV. Firefly QOS Version.mp4"
+        },
+        {
+          "file_name": "07HMV. Firefly SFX",
+          "file_size": 1338245679,
+          "duration": 218.4537641723356,
+          "file_path": "H:\\迅雷下载\\[MMD] MarchShadow 2024-06\\07HMV. Firefly SFX.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:39:55",
+      "file_count": 2
+    },
+    {
+      "id": "group_104_1779810003",
+      "files": [
+        {
+          "file_name": "mov_43_3",
+          "file_size": 39934209,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_43_3.webm"
+        },
+        {
+          "file_name": "mov_53_1",
+          "file_size": 38858408,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_53_1.webm"
+        },
+        {
+          "file_name": "mov_55_3",
+          "file_size": 41239305,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_55_3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:40:03",
+      "file_count": 3
+    },
+    {
+      "id": "group_103_1779810005",
+      "files": [
+        {
+          "file_name": "沙滩3人5",
+          "file_size": 1870672,
+          "duration": 13.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\沙滩3人5.webm"
+        },
+        {
+          "file_name": "沙滩3人6",
+          "file_size": 1904274,
+          "duration": 13.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\沙滩3人6.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:40:05",
+      "file_count": 2
+    },
+    {
+      "id": "group_102_1779810015",
+      "files": [
+        {
+          "file_name": "TXMM-DC-3",
+          "file_size": 1857777,
+          "duration": 12.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXMM-DC-3.webm"
+        },
+        {
+          "file_name": "TXMM-J-3",
+          "file_size": 1880550,
+          "duration": 12.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXMM-J-3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:40:15",
+      "file_count": 2
+    },
+    {
+      "id": "group_101_1779810020",
+      "files": [
+        {
+          "file_name": "TXJJ-SY-1",
+          "file_size": 1843647,
+          "duration": 13.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXJJ-SY-1.webm"
+        },
+        {
+          "file_name": "TXJJ-SY-2",
+          "file_size": 1889031,
+          "duration": 13.0,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\TXJJ-SY-2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:40:20",
+      "file_count": 2
+    },
+    {
+      "id": "group_98_1779810110",
+      "files": [
+        {
+          "file_name": "【Seedance2.0】砂户太郎作死想看Momoka Matoke的阴毛，直接被一脚踹飞",
+          "file_size": 10921075,
+          "duration": 30.162222222222223,
+          "file_path": "H:\\迅雷下载\\iwara\\【Seedance2.0】砂户太郎作死想看Momoka Matoke的阴毛，直接被一脚踹飞.mp4"
+        },
+        {
+          "file_name": "【Seedance2.0】砂户太郎作死想看胧月学姐的阴毛，直接被揍",
+          "file_size": 10879394,
+          "duration": 30.162222222222223,
+          "file_path": "H:\\迅雷下载\\iwara\\【Seedance2.0】砂户太郎作死想看胧月学姐的阴毛，直接被揍.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:41:50",
+      "file_count": 2
+    },
+    {
+      "id": "group_97_1779810140",
+      "files": [
+        {
+          "file_name": "x芭芭拉x 这样会打起精神了吗 旅行者 2",
+          "file_size": 29130858,
+          "duration": 100.0,
+          "file_path": "H:\\echarts\\mmd\\2021.4.17\\x芭芭拉x 这样会打起精神了吗 旅行者 2.mp4"
+        },
+        {
+          "file_name": "x芭芭拉x 这样会打起精神了吗 旅行者",
+          "file_size": 29161377,
+          "duration": 100.0,
+          "file_path": "H:\\echarts\\mmd\\2021.4.17\\x芭芭拉x 这样会打起精神了吗 旅行者.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:42:20",
+      "file_count": 2
+    },
+    {
+      "id": "group_96_1779810142",
+      "files": [
+        {
+          "file_name": "Infinity Nikki 10",
+          "file_size": 29198242,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 10.mp4"
+        },
+        {
+          "file_name": "Infinity Nikki 6",
+          "file_size": 29199747,
+          "duration": 100.16666666666667,
+          "file_path": "H:\\迅雷下载\\MMD\\Infinity Nikki 6.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:42:22",
+      "file_count": 2
+    },
+    {
+      "id": "group_94_1779810173",
+      "files": [
+        {
+          "file_name": "mov_36_13",
+          "file_size": 719278,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_36_13.webm"
+        },
+        {
+          "file_name": "mov_40_1",
+          "file_size": 732689,
+          "duration": 4.25,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_40_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:42:53",
+      "file_count": 2
+    },
+    {
+      "id": "group_92_1779810218",
+      "files": [
+        {
+          "file_name": "VID_20250924_114701_079",
+          "file_size": 19560278,
+          "duration": 5.366666666666666,
+          "file_path": "H:\\迅雷下载\\#陆雪琪 #诛仙 #AI视频 #国漫#云韵 #斗破苍穹 #银月 宋玉 #凡人修仙传\\VID_20250924_114701_079.mp4"
+        },
+        {
+          "file_name": "VID_20250924_114925_197",
+          "file_size": 20051613,
+          "duration": 5.366666666666666,
+          "file_path": "H:\\迅雷下载\\#陆雪琪 #诛仙 #AI视频 #国漫#云韵 #斗破苍穹 #银月 宋玉 #凡人修仙传\\VID_20250924_114925_197.mp4"
+        },
+        {
+          "file_name": "VID_20250924_114946_359",
+          "file_size": 19713741,
+          "duration": 5.366666666666666,
+          "file_path": "H:\\迅雷下载\\#陆雪琪 #诛仙 #AI视频 #国漫#云韵 #斗破苍穹 #银月 宋玉 #凡人修仙传\\VID_20250924_114946_359.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:43:38",
+      "file_count": 3
+    },
+    {
+      "id": "group_89_1779810257",
+      "files": [
+        {
+          "file_name": "mov_31_3",
+          "file_size": 23351221,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_31_3.webm"
+        },
+        {
+          "file_name": "mov_32_1",
+          "file_size": 23452020,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_32_1.webm"
+        },
+        {
+          "file_name": "mov_33_1",
+          "file_size": 23270989,
+          "duration": 25.083333333333332,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_33_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:44:17",
+      "file_count": 3
+    },
+    {
+      "id": "group_88_1779810259",
+      "files": [
+        {
+          "file_name": "mov_23_8",
+          "file_size": 23703991,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_23_8.webm"
+        },
+        {
+          "file_name": "mov_25_5",
+          "file_size": 22584390,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_25_5.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:44:19",
+      "file_count": 2
+    },
+    {
+      "id": "group_87_1779810261",
+      "files": [
+        {
+          "file_name": "mov_68_5",
+          "file_size": 3123182,
+          "duration": 8.416666666666666,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_68_5.webm"
+        },
+        {
+          "file_name": "mov_69_3",
+          "file_size": 3166355,
+          "duration": 8.416666666666666,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_69_3.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:44:21",
+      "file_count": 2
+    },
+    {
+      "id": "group_85_1779810266",
+      "files": [
+        {
+          "file_name": "20251030_RL05-1",
+          "file_size": 3031359,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251030_RL05-1.mp4"
+        },
+        {
+          "file_name": "20251030_RL05-2",
+          "file_size": 3171702,
+          "duration": 4.0625,
+          "file_path": "H:\\迅雷下载\\AI retouching laboratory 13 -remove clothing [AI Generated]\\20251030_RL05-2.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:44:26",
+      "file_count": 2
+    },
+    {
+      "id": "group_83_1779810279",
+      "files": [
+        {
+          "file_name": "mov_68_2",
+          "file_size": 4388456,
+          "duration": 8.416666666666666,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_68_2.webm"
+        },
+        {
+          "file_name": "mov_69_1",
+          "file_size": 4337174,
+          "duration": 8.416666666666666,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_69_1.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:44:39",
+      "file_count": 2
+    },
+    {
+      "id": "group_78_1779810326",
+      "files": [
+        {
+          "file_name": "mov_43_1",
+          "file_size": 25346491,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_43_1.webm"
+        },
+        {
+          "file_name": "mov_68_17",
+          "file_size": 23884469,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_68_17.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:45:26",
+      "file_count": 2
+    },
+    {
+      "id": "group_75_1779810457",
+      "files": [
+        {
+          "file_name": "回复术士的重来人生-05",
+          "file_size": 113027618,
+          "duration": 1440.2176870748299,
+          "file_path": "H:\\echarts\\迅雷下载F\\回复术士的重来人生\\回复术士的重来人生-05.mp4"
+        },
+        {
+          "file_name": "回复术士的重来人生-06",
+          "file_size": 111336854,
+          "duration": 1440.2176870748299,
+          "file_path": "H:\\echarts\\迅雷下载F\\回复术士的重来人生\\回复术士的重来人生-06.mp4"
+        },
+        {
+          "file_name": "回复术士的重来人生-07",
+          "file_size": 116832244,
+          "duration": 1440.2176870748299,
+          "file_path": "H:\\echarts\\迅雷下载F\\回复术士的重来人生\\回复术士的重来人生-07.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:47:37",
+      "file_count": 3
+    },
+    {
+      "id": "group_73_1779810494",
+      "files": [
+        {
+          "file_name": "包厢的灵异事件（定制）2K",
+          "file_size": 2715512413,
+          "duration": 434.3,
+          "file_path": "H:\\迅雷下载\\相位土豆 2025 03 02\\2024\\2月\\包厢的灵异事件（定制）2K\\包厢的灵异事件（定制）2K.mp4"
+        },
+        {
+          "file_name": "包厢的灵异事件（定制）差分",
+          "file_size": 2735633478,
+          "duration": 434.3,
+          "file_path": "H:\\迅雷下载\\相位土豆 2025 03 02\\2024\\2月\\包厢的灵异事件（定制）差分\\包厢的灵异事件（定制）差分.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:48:14",
+      "file_count": 2
+    },
+    {
+      "id": "group_72_1779810499",
+      "files": [
+        {
+          "file_name": "学姐3R1",
+          "file_size": 2485299,
+          "duration": 16.016666666666666,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\学姐3R1.webm"
+        },
+        {
+          "file_name": "学姐3R2",
+          "file_size": 2473591,
+          "duration": 16.016666666666666,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\学姐3R2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:48:19",
+      "file_count": 2
+    },
+    {
+      "id": "group_69_1779810510",
+      "files": [
+        {
+          "file_name": "DG-WS2-1",
+          "file_size": 2352054,
+          "duration": 13.966666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\DG-WS2-1.webm"
+        },
+        {
+          "file_name": "DG-WS2-2",
+          "file_size": 2323459,
+          "duration": 13.966666666666667,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\DG-WS2-2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:48:30",
+      "file_count": 2
+    },
+    {
+      "id": "group_67_1779810515",
+      "files": [
+        {
+          "file_name": "mov_25_4",
+          "file_size": 6663113,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_25_4.webm"
+        },
+        {
+          "file_name": "mov_25_7",
+          "file_size": 6533363,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_25_7.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:48:35",
+      "file_count": 2
+    },
+    {
+      "id": "group_66_1779810517",
+      "files": [
+        {
+          "file_name": "mov_12_1_2",
+          "file_size": 6670939,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_12_1_2.webm"
+        },
+        {
+          "file_name": "mov_13_1_2",
+          "file_size": 6554711,
+          "duration": 16.75,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_13_1_2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:48:37",
+      "file_count": 2
+    },
+    {
+      "id": "group_65_1779810546",
+      "files": [
+        {
+          "file_name": "【HMV】Thouars Mind Control - TnkDok",
+          "file_size": 6664054,
+          "duration": 11.656417233560092,
+          "file_path": "H:\\echarts\\迅雷下载F\\86mmd\\【HMV】Thouars Mind Control - TnkDok.mp4"
+        },
+        {
+          "file_name": "【HMV】Zuikaku Mind Control - TnkDok",
+          "file_size": 6715226,
+          "duration": 11.656417233560092,
+          "file_path": "H:\\echarts\\迅雷下载F\\86mmd\\【HMV】Zuikaku Mind Control - TnkDok.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:49:06",
+      "file_count": 2
+    },
+    {
+      "id": "group_64_1779810559",
+      "files": [
+        {
+          "file_name": "mov_70_11",
+          "file_size": 8610051,
+          "duration": 8.375,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_70_11.webm"
+        },
+        {
+          "file_name": "mov_70_17",
+          "file_size": 8926094,
+          "duration": 8.375,
+          "file_path": "H:\\echarts\\animation\\2020.8.29\\[にじいろばんび] にーとと天使とえっちな家族  (Video Only)\\mov_70_17.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:49:19",
+      "file_count": 2
+    },
+    {
+      "id": "group_63_1779810562",
+      "files": [
+        {
+          "file_name": "KJ-J-2",
+          "file_size": 2681148,
+          "duration": 15.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\KJ-J-2.webm"
+        },
+        {
+          "file_name": "KJ-J-D2",
+          "file_size": 2673654,
+          "duration": 15.95,
+          "file_path": "H:\\echarts\\迅雷下载E\\game\\lv巢\\AC2.3D完整版带声音【RPG双端】\\【雅熙】电脑2.3b\\www\\movies\\KJ-J-D2.webm"
+        }
+      ],
+      "added_time": "2026-05-26 23:49:22",
+      "file_count": 2
+    },
+    {
+      "id": "group_61_1779810568",
+      "files": [
+        {
+          "file_name": "Bizarre Commercial 2",
+          "file_size": 5018100,
+          "duration": 20.672,
+          "file_path": "H:\\迅雷下载\\rule34\\Bizarre Commercial 2.mp4"
+        },
+        {
+          "file_name": "Bizarre Commercial",
+          "file_size": 4976748,
+          "duration": 20.672,
+          "file_path": "H:\\迅雷下载\\rule34\\Bizarre Commercial.mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:49:28",
+      "file_count": 2
+    },
+    {
+      "id": "group_59_1779810626",
+      "files": [
+        {
+          "file_name": "Back to The Gym - Part 2 [Aerith&Corneo][Brutalisk][4K60FPS]",
+          "file_size": 106514567,
+          "duration": 185.0398185941043,
+          "file_path": "H:\\迅雷下载\\rule34\\Back to The Gym - Part 2 [Aerith&Corneo][Brutalisk][4K60FPS].mp4"
+        },
+        {
+          "file_name": "Back to The Gym - Part 2 [Tifa&BBC][Brutalisk][4K60FPS]",
+          "file_size": 106034578,
+          "duration": 185.0398185941043,
+          "file_path": "H:\\迅雷下载\\rule34\\Back to The Gym - Part 2 [Tifa&BBC][Brutalisk][4K60FPS].mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:50:26",
+      "file_count": 2
+    },
+    {
+      "id": "group_58_1779810630",
+      "files": [
+        {
+          "file_name": "[4K] Relaxing Resort #1 - Asuna [S.egg1124]",
+          "file_size": 187679927,
+          "duration": 322.00533333333334,
+          "file_path": "H:\\迅雷下载\\rule34\\[4K] Relaxing Resort #1 - Asuna [S.egg1124].mp4"
+        },
+        {
+          "file_name": "[4K] Relaxing Resort #1 - Karin [S.egg1124]",
+          "file_size": 188129814,
+          "duration": 322.00533333333334,
+          "file_path": "H:\\迅雷下载\\rule34\\[4K] Relaxing Resort #1 - Karin [S.egg1124].mp4"
+        }
+      ],
+      "added_time": "2026-05-26 23:50:30",
+      "file_count": 2
+    }
+  ]
 }

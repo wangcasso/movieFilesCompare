@@ -45,9 +45,27 @@ class VideoInfo:
 class VideoScanner:
     """视频文件扫描器"""
 
-    # 支持的 видео格式
+    # 支持的视频格式
     VIDEO_EXTENSIONS = {'.mp4', '.avi', '.mkv', '.mov', '.wmv', '.flv',
                         '.webm', '.m4v', '.mpg', '.mpeg', '.3gp', '.rmvb', '.rm'}
+    
+    # 需要跳过的系统目录（包括回收站）
+    SKIP_DIRECTORIES = {
+        '$RECYCLE.BIN',  # Windows 回收站（NTFS）
+        'RECYCLER',      # Windows 回收站（旧版/FAT）
+        'System Volume Information',  # 系统卷信息
+        'Temporary Internet Files',   # IE临时文件
+        'Temp',           # 临时文件夹
+        'tmp',            # 临时文件夹（小写）
+    }
+
+    @staticmethod
+    def _should_skip_path(file_path: Path) -> bool:
+        """判断是否应该跳过某个路径（如回收站、系统目录等）"""
+        for part in file_path.parts:
+            if part.upper() in VideoScanner.SKIP_DIRECTORIES or part in VideoScanner.SKIP_DIRECTORIES:
+                return True
+        return False
 
     @staticmethod
     def scan_folder(folder_path: str, progress_callback=None) -> List[VideoInfo]:
@@ -58,7 +76,11 @@ class VideoScanner:
         # 收集所有视频文件
         video_files = []
         for ext in VideoScanner.VIDEO_EXTENSIONS:
-            video_files.extend(folder.rglob(f'*{ext}'))
+            for file in folder.rglob(f'*{ext}'):
+                # 跳过回收站和系统目录
+                if VideoScanner._should_skip_path(file):
+                    continue
+                video_files.append(file)
 
         total_files = len(video_files)
 
@@ -340,7 +362,7 @@ class ComparisonEngine:
                 progress_callback, processed, total_videos
             )
 
-            # ★ 检查白名单，跳过匹配的组
+            # ★ 检查白名单，跳过匹配的组（扫描时不显示）
             filtered_duplicates = []
             for group in sub_duplicates:
                 if self.is_in_whitelist(group):
@@ -1166,19 +1188,38 @@ class VideoDuplicateFinderApp:
         self.log_message("正在生成缩略图...", "INFO")
         thumbnail_count = 0
 
+        # 获取白名单用于判断是否需要置灰
+        whitelist = []
+        if self.comparison_engine and hasattr(self.comparison_engine, 'whitelist'):
+            whitelist = self.comparison_engine.whitelist
+
         for group_idx, group in enumerate(self.duplicates, 1):
+            # 检查该组是否在白名单中
+            is_in_whitelist = False
+            if self.comparison_engine:
+                is_in_whitelist = self.comparison_engine.is_in_whitelist(group)
+
             # 分组标题行（只显示一次分组号）
+            group_tags = ["group_header"]
+            if is_in_whitelist:
+                group_tags.append("whitelist_group")
+            
             parent_id = self.result_tree.insert(
                 "", tk.END,
                 text="📁",  # 序号显示在#0列
                 values=("", "📁", "---", "---", "---", "---"),  # 选择列为空
-                tags=("group_header",)
+                tags=tuple(group_tags)
             )
 
             for idx_in_group, video in enumerate(group, 1):
                 # ★ 优化：只为确认重复的文件生成缩略图
                 thumbnail = self._generate_thumbnail(video.file_path)
                 thumbnail_count += 1
+
+                # 构建文件标签
+                file_tags = [video.file_path]
+                if is_in_whitelist:
+                    file_tags.append("whitelist_file")
 
                 # ★ 插入文件行：只有当thumbnail是PhotoImage对象时才使用image参数
                 if isinstance(thumbnail, object) and hasattr(thumbnail, '_PhotoImage__photo'):
@@ -1195,7 +1236,7 @@ class VideoDuplicateFinderApp:
                             f"{video.get_size_mb():.2f} MB",  # 大小
                             video.get_duration_str()  # 时长
                         ),
-                        tags=(video.file_path,)  # ★ 存储完整文件路径
+                        tags=tuple(file_tags)  # ★ 存储完整文件路径 + 白名单标签
                     )
                 else:
                     # thumbnail是字符串（如"🎬"），不使用image参数
@@ -1210,7 +1251,7 @@ class VideoDuplicateFinderApp:
                             f"{video.get_size_mb():.2f} MB",  # 大小
                             video.get_duration_str()  # 时长
                         ),
-                        tags=(video.file_path,)  # ★ 存储完整文件路径
+                        tags=tuple(file_tags)  # ★ 存储完整文件路径 + 白名单标签
                     )
 
         # 配置标签样式 - 高亮显示相同的时长和大小
@@ -1461,10 +1502,23 @@ class VideoDuplicateFinderApp:
 
             # 恢复重复文件组
             duplicates_data = scan_data.get('duplicates', [])
-            self.duplicates = [
-                [VideoInfo(**data) for data in group]
-                for group in duplicates_data
-            ]
+            self.duplicates = []
+            
+            for group_data in duplicates_data:
+                # 过滤掉不存在的文件
+                valid_videos = []
+                for data in group_data:
+                    video = VideoInfo(**data)
+                    if os.path.exists(video.file_path):
+                        valid_videos.append(video)
+                    else:
+                        self.log_message(f"跳过不存在的文件: {video.file_path}", "WARNING")
+                
+                # 如果组内剩下的文件少于2个，则不展示该组
+                if len(valid_videos) >= 2:
+                    self.duplicates.append(valid_videos)
+                else:
+                    self.log_message(f"跳过只剩{len(valid_videos)}个文件的组", "INFO")
 
             # 清空并重新显示结果
             for item in self.result_tree.get_children():
@@ -2380,10 +2434,44 @@ class VideoDuplicateFinderApp:
         config['whitelist'] = whitelist
         ConfigManager.save_config(config)
 
-        # 从结果中移除该组（白名单组不应显示在结果中）
-        self._remove_group_from_results(group_index)
+        # 更新 comparison_engine 的白名单
+        if self.comparison_engine:
+            self.comparison_engine.whitelist = whitelist
 
-        self.log_message(f"已将第 {group_index + 1} 组添加到白名单并从结果中移除", "INFO")
+        # 置灰显示该组（而不是移除）
+        self._gray_out_group(group_index)
+
+        self.log_message(f"已将第 {group_index + 1} 组添加到白名单并置灰显示", "INFO")
+
+    def _gray_out_group(self, group_index: int):
+        """将指定的组置灰显示"""
+        current_group = 0
+        found_target_group = False
+
+        for item_id in self.result_tree.get_children():
+            values = self.result_tree.item(item_id, 'values')
+            if values and len(values) > 2:
+                if values[2] == "---":
+                    # 分组标题行
+                    if current_group == group_index:
+                        found_target_group = True
+                        # 添加白名单标签
+                        tags = self.result_tree.item(item_id, 'tags')
+                        new_tags = list(tags) if tags else []
+                        if "whitelist_group" not in new_tags:
+                            new_tags.append("whitelist_group")
+                        self.result_tree.item(item_id, tags=tuple(new_tags))
+                    elif found_target_group:
+                        # 已经找到下一个分组，停止处理
+                        break
+                    current_group += 1
+                elif found_target_group:
+                    # 文件行 - 属于目标组，添加白名单标签
+                    tags = self.result_tree.item(item_id, 'tags')
+                    new_tags = list(tags) if tags else []
+                    if "whitelist_file" not in new_tags:
+                        new_tags.append("whitelist_file")
+                    self.result_tree.item(item_id, tags=tuple(new_tags))
 
     def _remove_group_from_results(self, group_index: int):
         """从Treeview中移除指定的组"""
