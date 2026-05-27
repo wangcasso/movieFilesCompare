@@ -1504,6 +1504,15 @@ class VideoDuplicateFinderApp:
             duplicates_data = scan_data.get('duplicates', [])
             self.duplicates = []
             
+            # 加载白名单用于过滤
+            config = ConfigManager.load_config()
+            whitelist = config.get('whitelist', [])
+            
+            # 创建临时的比较引擎用于白名单检查
+            temp_engine = ComparisonEngine({'whitelist': whitelist})
+            
+            skipped_by_whitelist = 0
+            
             for group_data in duplicates_data:
                 # 过滤掉不存在的文件
                 valid_videos = []
@@ -1516,9 +1525,17 @@ class VideoDuplicateFinderApp:
                 
                 # 如果组内剩下的文件少于2个，则不展示该组
                 if len(valid_videos) >= 2:
-                    self.duplicates.append(valid_videos)
+                    # 检查该组是否在白名单中，如果在则跳过
+                    if temp_engine.is_in_whitelist(valid_videos):
+                        skipped_by_whitelist += 1
+                        self.log_message(f"跳过白名单中的组: {valid_videos[0].file_name}", "INFO")
+                    else:
+                        self.duplicates.append(valid_videos)
                 else:
                     self.log_message(f"跳过只剩{len(valid_videos)}个文件的组", "INFO")
+            
+            if skipped_by_whitelist > 0:
+                self.log_message(f"已跳过 {skipped_by_whitelist} 个白名单组", "INFO")
 
             # 清空并重新显示结果
             for item in self.result_tree.get_children():
@@ -1993,9 +2010,15 @@ class VideoDuplicateFinderApp:
 
         # 如果是分组标题行，显示不同的菜单
         if values[2] == "---":
-            # 分组标题行 - 提供加入白名单选项
+            # 分组标题行 - 检查是否已在白名单中
+            tags = self.result_tree.item(item, 'tags')
+            is_in_whitelist = tags and "whitelist_group" in tags
+            
             context_menu = tk.Menu(self.root, tearoff=0)
-            context_menu.add_command(label="📋 将该组加入白名单", command=lambda: self.add_group_to_whitelist_from_tree(item))
+            if is_in_whitelist:
+                context_menu.add_command(label="❌ 从白名单移除", command=lambda: self.remove_group_from_whitelist(item))
+            else:
+                context_menu.add_command(label="📋 将该组加入白名单", command=lambda: self.add_group_to_whitelist_from_tree(item))
             context_menu.post(event.x_root, event.y_root)
         else:
             # 文件行 - 提供打开和删除选项
@@ -2022,6 +2045,87 @@ class VideoDuplicateFinderApp:
             self.add_to_whitelist(group_index)
         else:
             messagebox.showerror("错误", "无法找到对应的重复文件组")
+
+    def remove_group_from_whitelist(self, item_id):
+        """从白名单中移除指定的分组并恢复正常显示"""
+        # 找到该分组的索引
+        group_index = None
+        current_index = 0
+
+        for child_id in self.result_tree.get_children():
+            values = self.result_tree.item(child_id, 'values')
+            if values and values[2] == "---":  # 分组标题行
+                if child_id == item_id:
+                    group_index = current_index
+                    break
+                current_index += 1
+
+        if group_index is None or group_index >= len(self.duplicates):
+            messagebox.showerror("错误", "无法找到对应的重复文件组")
+            return
+
+        group = self.duplicates[group_index]
+
+        # 从配置文件中移除白名单记录
+        config = ConfigManager.load_config()
+        whitelist = config.get('whitelist', [])
+
+        # 查找匹配的白名单条目
+        entry_to_remove = None
+        for entry in whitelist:
+            if len(entry['files']) == len(group):
+                match = True
+                for i, file_info in enumerate(entry['files']):
+                    if (file_info['file_name'] != group[i].file_name or
+                        file_info['file_size'] != group[i].file_size):
+                        match = False
+                        break
+                if match:
+                    entry_to_remove = entry
+                    break
+
+        if entry_to_remove:
+            whitelist.remove(entry_to_remove)
+            config['whitelist'] = whitelist
+            ConfigManager.save_config(config)
+
+            # 更新 comparison_engine 的白名单
+            if self.comparison_engine:
+                self.comparison_engine.whitelist = whitelist
+
+            # 恢复该组的正常显示（移除白名单标签）
+            self._restore_group_display(group_index)
+
+            self.log_message(f"已将第 {group_index + 1} 组从白名单移除", "INFO")
+            messagebox.showinfo("成功", "已从白名单移除该组")
+        else:
+            messagebox.showwarning("提示", "该组不在白名单中")
+
+    def _restore_group_display(self, group_index: int):
+        """恢复指定组的正常显示（移除非白名单标签）"""
+        current_group = 0
+        found_target_group = False
+
+        for item_id in self.result_tree.get_children():
+            values = self.result_tree.item(item_id, 'values')
+            if values and len(values) > 2:
+                if values[2] == "---":
+                    # 分组标题行
+                    if current_group == group_index:
+                        found_target_group = True
+                        # 移除非白名单标签
+                        tags = self.result_tree.item(item_id, 'tags')
+                        new_tags = [t for t in list(tags) if t not in ["whitelist_group", "whitelist_file"]]
+                        self.result_tree.item(item_id, tags=tuple(new_tags))
+                    elif found_target_group:
+                        # 已经找到下一个分组，停止处理
+                        break
+                    current_group += 1
+                elif found_target_group:
+                    # 文件行 - 属于目标组，移除非白名单标签
+                    tags = self.result_tree.item(item_id, 'tags')
+                    new_tags = [t for t in list(tags) if t not in ["whitelist_group", "whitelist_file"]]
+                    self.result_tree.item(item_id, tags=tuple(new_tags))
 
     def sort_by_column(self, column: str):
         """按指定列排序（支持升序/降序切换）"""
